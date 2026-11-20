@@ -1,0 +1,61 @@
+% Example CV for a fictional person. Every name, company, number and link is made up.
+\documentclass[10pt]{article}
+\usepackage{harvardcv}
+% For Spanish: \usepackage[spanish,es-noshorthands,es-nolists]{babel}
+% For A4 paper: \geometry{a4paper}
+
+\begin{document}
+\header{Jordan Rivera}{%
+  Backend Software Engineer \,|\, National Programming Contest Champion\\[2pt]
+  Austin, TX \,$\cdot$\, +1 555 010 0199 \,$\cdot$\,
+  \href{mailto:jordan.rivera@example.com}{jordan.rivera@example.com} \,$\cdot$\,
+  \href{https://www.linkedin.com/in/example}{linkedin.com/in/example} \,$\cdot$\,
+  \href{https://github.com/example}{github.com/example}}
+
+\section{Experience}
+
+\role{Bluepine Logistics}{Mar 2024 -- Present}{Software Engineer}{Austin, TX}
+\begin{itemize}
+  \item Build REST APIs in Python and FastAPI for shipment tracking, serving 40k requests per minute at peak.
+  \item Cut nightly billing job runtime from 3 hours to 25 minutes by batching PostgreSQL queries.
+  \item Lead on-call for the tracking service; wrote the runbooks the team now uses for incidents.
+\end{itemize}
+
+\role{Lumen Health}{Jun 2022 -- Feb 2024}{Integrations Engineer (Contract)}{Remote (US)}
+\begin{itemize}
+  \item Built 5 integrations with hospital scheduling systems via HL7, REST APIs, OAuth and webhooks.
+  \item Wrote the sync service that reconciles appointments every 5 minutes, with alerts on drift.
+\end{itemize}
+
+\role{Northfield Software}{Jan 2021 -- May 2022}{Junior Developer}{Dallas, TX}
+\begin{itemize}
+  \item Developed internal admin tools in Django and React used by 60 support agents.
+\end{itemize}
+
+\shortrole{State University}{Teaching Assistant, Data Structures}{Aug 2019 -- Dec 2020}
+
+\section{Projects}
+
+\shortrole{\href{https://github.com/example}{League Scheduler}}{Python, FastAPI, PostgreSQL (freelance)}{Sep 2025 -- Present}
+\begin{itemize}
+  \item REST API for a youth soccer league: teams, fixtures and results; used by 30 clubs each weekend.
+  \item Deployed with Docker on a managed Postgres, with CI running 150+ tests on every push.
+\end{itemize}
+
+\section{Awards}
+\begin{itemize}
+  \item \textbf{National Programming Contest Champion} (2020); regional finalist three years in a row.
+  \item Problem setter for the state high school programming olympiad (2021, 2022).
+\end{itemize}
+
+\section{Education}
+\school{State University}{Dec 2020}{B.S. in Computer Science}
+Thesis (highest honors): \textit{Scheduling Algorithms for Shared Delivery Fleets}
+
+\section{Skills}
+\textbf{Programming:} Python, Go, SQL, TypeScript\\
+\textbf{Backend:} FastAPI, Django, PostgreSQL, Redis, REST APIs, OAuth, webhooks\\
+\textbf{DevOps:} Docker, Kubernetes, GitHub Actions, AWS, Git\\
+\textbf{Languages:} English (native), Spanish (B2)
+
+\end{document}
